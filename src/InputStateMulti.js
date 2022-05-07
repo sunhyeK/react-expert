@@ -9,12 +9,12 @@ function InputStateMulti () {
     const {name, nickname} = inputs;
 
     const onChange = (e) => {
+        const {name, value} = e.target; // 배열 비구조화 할당 X 객체 O
         /*
             onChange를 호출하는 곳이 이름, 닉네임 2개니까
-            호출한 녀석(e.target)의 name과 value를 받아서 어느 쪽인지 파악하고
-
+            호출한 녀석(e.target)의 name과 value를 받아서 어느 쪽인지 파악
         */ 
-        const {name, value} = e.target; // 배열 비구조화 할당 X 객체 O
+
         setInputs({
             ...inputs,
             [name]: value
@@ -30,12 +30,10 @@ function InputStateMulti () {
     };
 
     const onReset = () => {
-        console.log(inputs);
         setInputs({
             name: '',
             nickname: ''
         })
-        console.log(inputs);
     };
     return (
         <div>
