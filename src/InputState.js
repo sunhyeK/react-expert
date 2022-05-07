@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function InputStatus() {
+function InputState() {
     const [ text, setText ] = useState('');
     // '' 초기 String 값
 
@@ -22,4 +22,4 @@ function InputStatus() {
     )
 }
 
-export default InputStatus;
+export default InputState;

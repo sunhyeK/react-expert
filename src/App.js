@@ -3,8 +3,8 @@ import Hello from './Hello';
 import Wrapper from './Wrapper';
 import IsRender from './IsRender';
 import UseStateCounter from './UseStateCounter';
-import InputStatus from './InputStatus';
-import InputStatusMulti from './InputStatusMulti';
+import InputState from './InputState';
+import InputStateMulti from './InputStateMulti';
 
 function App() {
   const loginYn = 'Y';
@@ -51,11 +51,11 @@ function App() {
       {/* UseState */}
       <UseStateCounter/>
 
-      {/* input status 관리 */}
-      <InputStatus/>
+      {/* input state 관리 */}
+      <InputState/>
 
-      {/* multiful input status 관리 */}
-      <InputStatusMulti />
+      {/* multiple input state 관리 */}
+      <InputStateMulti />
     </div>
   );
 }
